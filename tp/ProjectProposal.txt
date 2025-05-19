@@ -1,0 +1,60 @@
+Project Description:
+
+The name of my project is just Scuffed Minesweeper. This project is a recreation of the classic game of minesweeper in python using CMU 112 Graphics and Pillow. 
+
+Competitive Analysis:
+
+When researching for this project, I noticed many similar ones on the internet, including the one on Google's search of minesweeper, minesweeperonline.com, and minesweeper.online.These projects differed from each other by design where the Google one had a more simplistic textures that were just colors, but contained sounds when you clicked. The other two stayed true to the original minesweeper looks and icons. Minesweeperonline.com guaranteed that the user started with a "blob" and minesweeper.online had the occasional chance of only clearing one square on the first click. While, minesweeper.online lets you clear the surrounding area the you click the number icon if there is an equal number of bombs flagged nearby. I hope to implement the sound feature of the google one, the guaranteed blob at the start, and the clearing mechanism to my final project.
+
+Structural Plan:
+Files:
+-board.py: the board mechanism of the game
+-gui.py: the different screens and game menu
+-game.py: board but on a canvas 
+-tiles: folder of tile images
+-num: clock images
+-faceIcon: face images
+-minesweeper sounds: sounds for minesweeper
+
+Algorithmic Plan:
+Minesweeper generator:
+-I making a minesweeper generator that makes it so that there is bombs randomly generated on the map. It should run so the every click makes either a new tile or a new blob of tiles if the tiles next to the the clicked tile has no number in it. I am using recursion to keep digging around the current tile selected until there is no more open tiles. I might have to rework my spawn algorithm to depend on the user's click rather than based on a predetermined map.
+Minesweeper ai:
+-This ai will serve as both an automatic minesweeper solver and a hint generator. It will look for areas where the user has not flagged yet and is stuck on. It will also implement higher level minesweeper logic that average players might not know.
+
+Timeline Plan:
+4/16/22: reworking algorithm to allow for a "blob" start and no mines on first click
+4/17/22: working out interface so that images are used instead of rectangles
+4/18/22: interconnecting the files so that it all runs smoothly together
+4/19/22: developing an ai minesweeper solver
+4/20/22: setting up a bomb counter and a timer in the corners of the board using images
+4/21/22: fixing bugs
+4/22/22: fixing bugs
+
+Post Tp2:
+-adding sounds
+-fixing bugs
+-try more pygames features
+ 
+Version Control:
+The image of version control is a screenshot of my flash drive. I saved tp1 as tp,tp1 and tp0 as tp,tp0 in this flash drive.
+
+Module List:
+-Pil
+-Pygame(sound)
+
+
+
+Tp3 Design:
+-added sounds
+-added a feature when you click on a tile with enough flags round it, it will clear any remaining uncleared tiles
+-scaled up the size of the entire board for readability
+-added a hint system
+-added a clock
+-added a bomb counter
+-fixed up main menu screen
+-fixed up help screen
+
+
+
+
